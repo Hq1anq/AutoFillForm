@@ -1,6 +1,478 @@
-{
-	"Nếu sinh viên vay tiền bạn nhưng không trả đúng hạn, hậu quả pháp lý là gì": "Phải trả lãi suất theo thỏa thuận hoặc luật định",
-	"Sinh viên bị chủ nhà trọ giữ chứng minh nhân dân trái phép có thể làm gì": "Yêu cầu trả lại và bồi thường thiệt hại",
-	"Sinh viên ký hợp đồng thuê nhà trọ phải tuân theo hình thức nào": "Bắt buộc phải công chứng",
-	"Sinh viên sử dụng Wi-Fi trường học phải tuân thủ quy định gì": "Không thực hiện hành vi tấn công mạng hoặc phát tán mã độc"
-}
+[
+	{
+		"question": "Theo Luật Giáo dục Đại học 2018, trách nhiệm nào sau đây là bắt buộc đối với sinh viên",
+		"answer": "Tôn trọng giảng viên, cán bộ và các sinh viên khác"
+	},
+	{
+		"question": "Vi phạm quyền sở hữu trí tuệ trong nghiên cứu (như sử dụng dữ liệu trái phép) có thể dẫn đến hậu quả gì đối với sinh viên",
+		"answer": "Bị xử phạt dân sự, hành chính hoặc hình sự tùy mức độ"
+	},
+	{
+		"question": "Theo Luật Phòng, chống tham nhũng 2018, mục tiêu chính của luật là gì",
+		"answer": "Phòng ngừa, phát hiện, xử lý tham nhũng và các hành vi vi phạm pháp luật về phòng,chống tham nhũng"
+	},
+	{
+		"question": "Sinh viên có quyền yêu cầu nhà cung cấp dịch vụ mạng làm gì",
+		"answer": "Xóa thông tin sai sự thật về mình"
+	},
+	{
+		"question": "Hành vi nào của sinh viên có thể bị xử phạt theo Luật An ninh mạng",
+		"answer": "Hack tài khoản mạng xã hội của bạn cùng lớp"
+	},
+	{
+		"question": "Nghĩa vụ nào sau đây là bắt buộc đối với sinh viên",
+		"answer": "Tuân thủ nội quy, quy chế của cơ sở giáo dục"
+	},
+	{
+		"question": "Ai có thẩm quyền quyết định buộc thôi học sinh viên",
+		"answer": "Hiệu trưởng/Giám đốc cơ sở giáo dục"
+	},
+	{
+		"question": "Sinh viên lái xe máy không đội mũ bảo hiểm và gây tai nạn có thể bị xử lý theo tội gì",
+		"answer": "Tội vi phạm quy định về giao thông (Điều 261)"
+	},
+	{
+		"question": "Quyền sở hữu nhãn hiệu cho sản phẩm nghiên cứu (như ứng dụng di động học tập) thuộc về ai nếu sinh viên tự phát triển",
+		"answer": "Thuộc sinh viên nếu tự đăng ký"
+	},
+	{
+		"question": "Sinh viên có thể bị đình chỉ học tập tối đa bao lâu",
+		"answer": "1 năm"
+	},
+	{
+		"question": "Sinh viên trộm cắp laptop của bạn cùng phòng có thể bị phạt tù tối đa bao lâu",
+		"answer": "3 năm"
+	},
+	{
+		"question": "Hành vi nào sau đây của sinh viên bị cấm theo Luật Phòng, chống ma túy",
+		"answer": "Tàng trữ một lượng nhỏ ma túy trong ký túc xá"
+	},
+	{
+		"question": "Sinh viên tàng trữ một lượng nhỏ ma túy để sử dụng cá nhân có thể bị phạt tù tối đa bao lâu",
+		"answer": "B. 5 năm"
+	},
+	{
+		"question": "Trách nhiệm nào sau đây của sinh viên liên quan đến việc bảo vệ tài sản trường học",
+		"answer": "Sử dụng và bảo vệ tài sản công của cơ sở giáo dục đại học"
+	},
+	{
+		"question": "Sinh viên uống rượu bia và gây rối ở ký túc xá có thể bị xử lý theo tội gì",
+		"answer": "Tội gây rối trật tự công cộng (Điều 318)"
+	},
+	{
+		"question": "Sinh viên có quyền từ chối giao dịch nào",
+		"answer": "Giao dịch lừa đảo, không rõ ràng"
+	},
+	{
+		"question": "Sinh viên dưới 18 tuổi sử dụng ma túy trái phép có thể bị xử lý như thế nào",
+		"answer": "Xử lý nhẹ hơn theo quy định cho người dưới 18 tuổi"
+	},
+	{
+		"question": "Sinh viên tốt nghiệp được cấp bằng theo hình thức nào",
+		"answer": "Theo quy định của Bộ Giáo dục và Đào tạo"
+	},
+	{
+		"question": "Sinh viên sử dụng ma túy trái phép có thể bị xử lý như thế nào",
+		"answer": "Bị xử phạt hành chính hoặc truy cứu trách nhiệm hình sự"
+	},
+	{
+		"question": "Mục tiêu chính của Luật An ninh mạng 2018 là gì",
+		"answer": "Bảo vệ an ninh quốc gia và quyền lợi người dùng trên không gian mạng"
+	},
+	{
+		"question": "Sinh viên có quyền gì khi phát hiện tài khoản giả mạo mình trên mạng",
+		"answer": "Yêu cầu xóa tài khoản giả mạo"
+	},
+	{
+		"question": "Sinh viên photocopy toàn bộ sách giáo khoa để sử dụng trong học tập có vi phạm Luật Sở hữu trí tuệ không",
+		"answer": "Không vi phạm nếu chỉ dùng cá nhân"
+	},
+	{
+		"question": "Hợp đồng thuê phòng trọ của sinh viên bị vô hiệu khi nào",
+		"answer": "Khi sinh viên chưa đủ 18 tuổi và không có giám hộ đồng ý"
+	},
+	{
+		"question": "Sinh viên sử dụng mạng xã hội phải tuân thủ nguyên tắc nào",
+		"answer": "Tôn trọng quyền, lợi ích hợp pháp của người khác"
+	},
+	{
+		"question": "Theo Luật Giáo dục Đại học, mục tiêu của giáo dục đại học là gì",
+		"answer": "Đào tạo nguồn nhân lực chất lượng cao, nâng cao dân trí, bồi dưỡng nhân tài"
+	},
+	{
+		"question": "Sinh viên sử dụng ma túy bất hợp pháp có thể bị xử lý theo điều luật nào",
+		"answer": "Điều 249 - Tội tàng trữ, sử dụng trái phép chất ma túy"
+	},
+	{
+		"question": "Sinh viên phát hiện cán bộ trường cấp học bổng bất chính nên làm gì theo Luật Phòng, chống tham nhũng",
+		"answer": "Báo cáo cho cơ quan có thẩm quyền để được bảo vệ"
+	},
+	{
+		"question": "Sinh viên có quyền được cung cấp thông tin gì từ trường",
+		"answer": "Nội dung, chương trình đào tạo"
+	},
+	{
+		"question": "Sinh viên vi phạm nội quy có thể chịu hình thức kỷ luật nào",
+		"answer": "Cảnh cáo, đình chỉ, buộc thôi học"
+	},
+	{
+		"question": "Sinh viên mua hàng trực tuyến nhưng nhận hàng lỗi có quyền gì",
+		"answer": "Yêu cầu đổi hàng hoặc hoàn tiền"
+	},
+	{
+		"question": "Theo Luật An ninh mạng, thông tin cá nhân của sinh viên bao gồm gì",
+		"answer": "Tên, ngày sinh, số CMND/CCCD, thông tin tài khoản ngân hàng"
+	},
+	{
+		"question": "Luật An ninh quốc gia 2004 quy định quyền nào của sinh viên khi phát hiện hành vi xâm phạm an ninh quốc gia",
+		"answer": "Báo cáo cho cơ quan chức năng và được bảo vệ danh tính"
+	},
+	{
+		"question": "Hành vi nào sau đây của sinh viên bị cấm theo Luật An ninh mạng",
+		"answer": "Đăng tin sai sự thật gây hoang mang dư luận"
+	},
+	{
+		"question": "Sinh viên bị đánh cắp tài khoản mạng xã hội nên làm gì đầu tiên",
+		"answer": "Báo cáo cho nhà cung cấp dịch vụ để khóa tài khoản"
+	},
+	{
+		"question": "Luật Giáo dục Đại học 2018 được Quốc hội thông qua vào ngày nào",
+		"answer": "19/11/2018"
+	},
+	{
+		"question": "Sinh viên tổ chức cờ bạc trong ký túc xá có thể bị xử lý theo tội gì",
+		"answer": "Tội tổ chức đánh bạc (Điều 321)"
+	},
+	{
+		"question": "Hợp đồng thuê nhà trọ giữa sinh viên và chủ nhà có thể chấm dứt khi nào",
+		"answer": "Khi hết thời hạn hợp đồng hoặc theo thỏa thuận"
+	},
+	{
+		"question": "Sinh viên dưới 18 tuổi phạm tội trộm cắp tài sản có thể bị xử lý như thế nào",
+		"answer": "Xử lý nhẹ hơn theo quy định cho người dưới 18 tuổi"
+	},
+	{
+		"question": "Sinh viên dưới 18 tuổi ký hợp đồng mua laptop cần điều kiện gì",
+		"answer": "Phải có sự đồng ý của người giám hộ"
+	},
+	{
+		"question": "Hành vi nào sau đây không bị cấm theo Luật An ninh mạng",
+		"answer": "Chia sẻ tài liệu học tập trên Google Drive"
+	},
+	{
+		"question": "Sinh viên được hưởng chính sách miễn, giảm học phí trong trường hợp nào",
+		"answer": "Thuộc đối tượng chính sách theo quy định"
+	},
+	{
+		"question": "Sinh viên bị chủ nhà trọ giữ chứng minh nhân dân trái phép có thể làm gì",
+		"answer": "Yêu cầu trả lại và bồi thường thiệt hại"
+	},
+	{
+		"question": "Sinh viên lừa bán vé sự kiện giả để chiếm đoạt tiền có thể bị xử lý theo tội gì",
+		"answer": "Tội lừa đảo chiếm đoạt tài sản (Điều 174)"
+	},
+	{
+		"question": "Theo Luật, cơ sở giáo dục đại học phải công khai thông tin gì",
+		"answer": "Chất lượng đào tạo và điều kiện cơ sở vật chất"
+	},
+	{
+		"question": "Sinh viên ký hợp đồng thuê nhà trọ phải tuân theo hình thức nào",
+		"answer": "Có thể bằng văn bản hoặc lời nói, trừ trường hợp pháp luật yêu cầu công chứng"
+	},
+	{
+		"question": "Ai có quyền quyết định thành lập trường đại học công lập",
+		"answer": "Thủ tướng Chính phủ"
+	},
+	{
+		"question": "Sinh viên bị vu khống là gian lận thi cử có thể làm gì",
+		"answer": "Báo công an để xử lý theo Điều 156"
+	},
+	{
+		"question": "Luật An ninh mạng 2018 được Quốc hội thông qua vào ngày nào",
+		"answer": "12/6/2018"
+	},
+	{
+		"question": "Theo Luật Phòng, chống tham nhũng, việc công khai thông tin tài sản của Lãnh đạo quản lý nhà trường nhằm mục đích gì",
+		"answer": "Phòng ngừa tham nhũng bằng cách phát hiện tài sản bất minh bạch"
+	},
+	{
+		"question": "Sinh viên tham gia huấn luyện GDQP&AN có thể được hưởng chính sách gì theo Luật Quốc phòng",
+		"answer": "Được cấp quân hàm sĩ quan dự bị"
+	},
+	{
+		"question": "Sinh viên có thể ủy quyền cho người khác làm gì",
+		"answer": "Thay mặt nộp học phí"
+	},
+	{
+		"question": "Sinh viên có quyền tham gia hoạt động nào sau đây",
+		"answer": "Tham gia nghiên cứu khoa học, hoạt động xã hội"
+	},
+	{
+		"question": "Trong nghiên cứu đại học, sáng chế từ đề tài nghiên cứu của sinh viên thuộc quyền sở hữu của ai",
+		"answer": "Thuộc về tổ chức (trường đại học) nếu sử dụng tài nguyên trường"
+	},
+	{
+		"question": "Theo Luật Sở hữu trí tuệ 2022, trường đại học có trách nhiệm gì liên quan đến sở hữu trí tuệ của sinh viên",
+		"answer": "Hỗ trợ đăng ký và bảo vệ quyền sở hữu trí tuệ từ nghiên cứu"
+	},
+	{
+		"question": "Hình thức đào tạo nào không được quy định trong Luật Giáo dục Đại học",
+		"answer": "Tự học không cần hướng dẫn"
+	},
+	{
+		"question": "Theo Luật Phòng, chống ma túy, sinh viên cai nghiện ma túy có quyền gì",
+		"answer": "Được hỗ trợ tư vấn, điều trị và tái hòa nhập cộng đồng"
+	},
+	{
+		"question": "Sinh viên có thể bị xử phạt bao nhiêu nếu đăng tin sai sự thật gây hoang mang",
+		"answer": "Từ 10-20 triệu đồng (theo Nghị định 144/2021/NĐ-CP)"
+	},
+	{
+		"question": "Sinh viên tổ chức đua xe trái phép có thể bị phạt tù tối đa bao lâu",
+		"answer": "7 năm"
+	},
+	{
+		"question": "Hành vi nào sau đây vi phạm Luật An ninh mạng",
+		"answer": "Chia sẻ phần mềm lậu trên nhóm sinh viên"
+	},
+	{
+		"question": "Sinh viên bị bạn cùng phòng xúc phạm danh dự trên mạng xã hội có quyền gì",
+		"answer": "Yêu cầu bồi thường thiệt hại về tinh thần"
+	},
+	{
+		"question": "Sinh viên có quyền khiếu nại về vấn đề gì",
+		"answer": "Kết quả học tập hoặc kỷ luật"
+	},
+	{
+		"question": "Theo sửa đổi 2022 của Luật, quy định mới nào liên quan đến phòng chống tham nhũng trong giáo dục",
+		"answer": "Mở rộng kiểm soát xung đột lợi ích cho cán bộ trường học"
+	},
+	{
+		"question": "Theo Luật Sở hữu trí tuệ 2022, quyền nào của tác giả không thể chuyển nhượng trong quá trình viết bài nghiên cứu khoa học",
+		"answer": "Quyền nhân thân (như quyền đứng tên tác giả)"
+	},
+	{
+		"question": "Sinh viên làm hỏng thiết bị phòng thí nghiệm phải chịu trách nhiệm gì",
+		"answer": "Bồi thường thiệt hại theo giá trị tài sản"
+	},
+	{
+		"question": "Sinh viên có quyền yêu cầu bảo vệ thông tin cá nhân trong trường hợp nào",
+		"answer": "Khi trường công khai điểm thi mà không được đồng ý"
+	},
+	{
+		"question": "Hành vi nào sau đây bị cấm đối với sinh viên",
+		"answer": "Gian lận trong học tập, thi cử"
+	},
+	{
+		"question": "Sinh viên sử dụng giấy tờ giả để vay tiền có thể bị xử lý theo tội gì",
+		"answer": "Tội làm giả con dấu, tài liệu (Điều 341)"
+	},
+	{
+		"question": "Sinh viên mua ma túy qua mạng xã hội có thể bị xử lý theo tội gì",
+		"answer": "Tội mua bán trái phép chất ma túy (Điều 251)"
+	},
+	{
+		"question": "Sinh viên tham gia đánh nhau trong ký túc xá gây rối trật tự có thể bị xử lý theo tội gì",
+		"answer": "Tội gây rối trật tự công cộng (Điều 318)"
+	},
+	{
+		"question": "Sinh viên tham gia nhóm chat phát tán thông tin chống phá nhà nước có thể chịu hậu quả gì",
+		"answer": "Bị truy cứu trách nhiệm hình sự"
+	},
+	{
+		"question": "Sinh viên sử dụng phần mềm học tập lậu trong nghiên cứu có thể bị xử phạt theo Luật Sở hữu trí tuệ như thế nào",
+		"answer": "Phạt hành chính từ 3-5 triệu đồng đối với cá nhân"
+	},
+	{
+		"question": "Sinh viên đăng bài xúc phạm danh dự giảng viên trên mạng có thể chịu hậu quả gì",
+		"answer": "Bị xử phạt hành chính hoặc truy cứu trách nhiệm hình sự"
+	},
+	{
+		"question": "Sinh viên ký hợp đồng mua điện thoại trả góp nhưng không trả được nợ thì sao",
+		"answer": "Phải chịu trách nhiệm dân sự theo hợp đồng"
+	},
+	{
+		"question": "Sinh viên bị bạn cùng phòng đe dọa giết người có quyền làm gì",
+		"answer": "Báo công an để xử lý theo Điều 133"
+	},
+	{
+		"question": "Luật Giáo dục Đại học quy định gì về nghiên cứu khoa học",
+		"answer": "Là quyền nhưng không bắt buộc đối với sinh viên"
+	},
+	{
+		"question": "Theo Luật Phòng, chống ma túy, sinh viên có trách nhiệm gì trong phòng, chống ma túy",
+		"answer": "Tuyên truyền, nâng cao nhận thức về tác hại ma túy"
+	},
+	{
+		"question": "Sinh viên đăng ký bằng sáng chế cho ý tưởng nghiên cứu cá nhân cần đáp ứng điều kiện gì theo Luật",
+		"answer": "Ý tưởng phải mới, có tính sáng tạo và áp dụng công nghiệp"
+	},
+	{
+		"question": "Theo Luật Sở hữu trí tuệ 2022, ngoại lệ nào cho phép giảng viên trích dẫn tài liệu nghiên cứu mà không cần xin phép",
+		"answer": "Trích dẫn với mục đích giảng dạy, nghiên cứu, không vì mục đích thương mại"
+	},
+	{
+		"question": "Sinh viên bị lừa đảo khi mua hàng trực tuyến nên làm gì",
+		"answer": "Báo cáo cơ quan chức năng để xử lý"
+	},
+	{
+		"question": "Sinh viên có trách nhiệm gì khi sử dụng mạng xã hội",
+		"answer": "Bảo vệ thông tin cá nhân của mình và người khác"
+	},
+	{
+		"question": "Hành vi xúc phạm danh dự giảng viên có thể dẫn đến hậu quả gì",
+		"answer": "Kỷ luật từ cảnh cáo đến buộc thôi học"
+	},
+	{
+		"question": "Sinh viên vi phạm trách nhiệm chấp hành nội quy có thể đối mặt với hình thức kỷ luật nào",
+		"answer": "Bị cảnh cáo, đình chỉ hoặc buộc thôi học"
+	},
+	{
+		"question": "Sinh viên bị lộ thông tin cá nhân trên mạng có quyền gì",
+		"answer": "Yêu cầu xóa thông tin cá nhân bị sử dụng trái phép"
+	},
+	{
+		"question": "Sinh viên phát hiện bạn cùng phòng sử dụng ma túy nên làm gì",
+		"answer": "Báo cáo cho cơ quan công an hoặc nhà trường"
+	},
+	{
+		"question": "Sinh viên có quyền chuyển trường trong trường hợp nào",
+		"answer": "Đáp ứng điều kiện theo quy định của trường"
+	},
+	{
+		"question": "Hành vi gian lận thi cử của sinh viên có thể bị xử lý theo điều luật nào",
+		"answer": "Điều 356 - Hành vi gian lận trong thi cử"
+	},
+	{
+		"question": "Sinh viên phát tán video riêng tư của bạn cùng lớp có thể bị xử lý theo tội gì",
+		"answer": "Tội làm nhục người khác (Điều 155)"
+	},
+	{
+		"question": "Sinh viên cố ý làm hỏng tài sản của trường (như đập phá bàn ghế) có thể bị xử lý theo tội gì",
+		"answer": "Tội hủy hoại tài sản (Điều 178)"
+	},
+	{
+		"question": "Theo Luật Quốc phòng 2018, trong tình trạng khẩn cấp về quốc phòng, sinh viên có trách nhiệm gì",
+		"answer": "Tham gia bảo vệ Tổ quốc theo lệnh huy động"
+	},
+	{
+		"question": "Sinh viên bị mất xe máy trong bãi giữ xe của trường, ai chịu trách nhiệm",
+		"answer": "Nhà trường, nếu có hợp đồng gửi xe"
+	},
+	{
+		"question": "Sinh viên có quyền nào sau đây theo Luật Giáo dục Đại học",
+		"answer": "Được tôn trọng và bảo vệ danh dự, nhân phẩm"
+	},
+	{
+		"question": "Theo Bộ luật Dân sự 2015, quyền nào sau đây thuộc về quyền nhân thân của sinh viên",
+		"answer": "Quyền được bảo vệ danh dự, nhân phẩm"
+	},
+	{
+		"question": "Theo Luật Giáo dục Đại học, sinh viên có quyền nào liên quan đến học tập?",
+		"answer": "Được học tập, nghiên cứu trong môi trường bình đẳng, không phân biệt đối xử"
+	},
+	{
+		"question": "Sinh viên sử dụng Wi-Fi trường học phải tuân thủ quy định gì?",
+		"answer": "Không thực hiện hành vi tấn công mạng hoặc phát tán mã độc"
+	},
+	{
+		"question": "Ai có trách nhiệm ban hành quy chế đào tạo của trường?",
+		"answer": "Hội đồng trường"
+	},
+	{
+		"question": "Sinh viên có quyền gì khi bị bạn cùng lớp vu khống?",
+		"answer": "Yêu cầu xin lỗi công khai và bồi thường"
+	},
+	{
+		"question": "Theo Luật Quốc phòng 2018, sinh viên đại học có nghĩa vụ nào sau đây liên quan đến giáo dục quốc phòng",
+		"answer": "Tham gia học tập, huấn luyện giáo dục quốc phòng và an ninh theo chương trình đàotạo"
+	},
+	{
+		"question": "Sinh viên có trách nhiệm gì trong phòng, chống tham nhũng theo Luật Phòng, chống tham nhũng 2018",
+		"answer": "Tuyên truyền, giáo dục và báo cáo hành vi tham nhũng trong môi trường học tập"
+	},
+	{
+		"question": "Hậu quả pháp lý đối với sinh viên tham gia hối lộ giảng viên để qua môn là gì?",
+		"answer": "Có thể bị xử lý hình sự theo Bộ luật Hình sự nếu cấu thành tội đưa hối lộ"
+	},
+	{
+		"question": "Sinh viên làm mất tài liệu mượn của thư viện trường phải làm gì?",
+		"answer": "Bồi thường theo giá trị tài liệu"
+	},
+	{
+		"question": "Theo Luật, hành vi lạm dụng chức vụ để ưu tiên đăng ký môn học cho người thân của cán bộ trường là gì",
+		"answer": "Lạm dụng chức vụ, quyền hạn chiếm đoạt tài sản"
+	},
+	{
+		"question": "Hành vi nào sau đây của sinh viên bị cấm theo Luật An ninh quốc gia 2004?",
+		"answer": "Tiết lộ bí mật nhà nước qua mạng xã hội"
+	},
+	{
+		"question": "Hành vi sao chép nguyên văn luận văn của bạn để nộp bài có thể bị xử lý theo quy định nào của Luật Sở hữu trí tuệ?",
+		"answer": "Vi phạm quyền tác giả (đạo văn)"
+	},
+	{
+		"question": "Sinh viên đánh bạn cùng lớp gây thương tích 15% có thể bị truy cứu theo tội gì?",
+		"answer": "Tội cố ý gây thương tích (Điều 134)"
+	},
+	{
+		"question": "Sinh viên tổ chức sử dụng ma túy trong ký túc xá có thể bị phạt tù tối đa bao lâu?",
+		"answer": "15 năm"
+	},
+	{
+		"question": "Theo Luật Giáo dục Đại học 2018, trách nhiệm nào sau đây là bắt buộc đối với sinh viên",
+		"answer": "Được cung cấp đầy đủ thông tin về chương trình đào tạo và quy chế học tập"
+	},
+	{
+		"question": "Nếu sinh viên vay tiền bạn nhưng không trả đúng hạn, hậu quả pháp lý là gì?",
+		"answer": "Phải trả lãi suất theo thỏa thuận hoặc luật định"
+	},
+	{
+		"question": "Theo Luật An ninh mạng, ai có trách nhiệm bảo vệ thông tin cá nhân của sinh viên",
+		"answer": "Nhà cung cấp dịch vụ và sinh viên"
+	},
+	{
+		"question": "Hành vi nhận hối lộ từ sinh viên để thay đổi điểm thi của giảng viên được coi là hành vi tham nhũng nào?",
+		"answer": "Nhận hối lộ"
+	},
+	{
+		"question": "Hành vi nào sau đây của sinh viên vi phạm Bộ luật Dân sự?",
+		"answer": "Đăng thông tin sai sự thật về giảng viên"
+	},
+	{
+		"question": "Bộ luật Dân sự 2015 được Quốc hội thông qua vào ngày nào?",
+		"answer": "24/11/2015"
+	},
+	{
+		"question": "Sinh viên vay tiền ngân hàng để đóng học phí phải chịu lãi suất tối đa bao nhiêu",
+		"answer": "Theo thỏa thuận, nhưng không vượt quá mức luật định"
+	},
+	{
+		"question": "Hành vi nào sau đây của sinh viên không cấu thành tội phạm?",
+		"answer": "Mượn xe máy của bạn và trả đúng hẹn"
+	},
+	{
+		"question": "Sinh viên tham gia Đoàn Thanh niên có vai trò gì trong phòng chống tham nhũng theo Luật",
+		"answer": "Tuyên truyền, giám sát và báo cáo tham nhũng trong trường học"
+	},
+	{
+		"question": "Sinh viên tải ứng dụng học tập từ nguồn không rõ ràng có nguy cơ gì?",
+		"answer": "Bị nhiễm mã độc, vi phạm Luật An ninh mạng"
+	},
+	{
+		"question": "Sinh viên có thương tật nặng có được miễn học GDQP&AN theo Luật Quốc phòng không?",
+		"answer": "Được miễn nếu có giấy xác nhận y tế"
+	},
+	{
+		"question": "Theo Luật Phòng, chống ma túy 2021, ma túy được định nghĩa là gì?",
+		"answer": "Chất gây nghiện, hướng thần và tiền chất dùng trái phép"
+	},
+	{
+		"question": "Luật Phòng, chống ma túy 2021 được Quốc hội thông qua vào ngày nào?",
+		"answer": "30/3/2021"
+	},
+	{
+		"question": "Sinh viên đăng bài xúc phạm danh dự giảng viên trên mạng có thể bị xử lý theo tội gì",
+		"answer": "Tội làm nhục người khác (Điều 155)"
+	}
+]
