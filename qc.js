@@ -1,12 +1,14 @@
 (async () => {
 	/************** CONFIG ******************/
 	const ANSWER_MAP_URL =
-		"https://raw.githubusercontent.com/hq1anq/AutoFillForm/main/pl.json";
+		"https://raw.githubusercontent.com/hq1anq/AutoFillForm/main/qc.json";
 	const SELECTOR_QUESTION_ITEM = '[data-automation-id="questionItem"]';
 	const SELECTOR_QUESTION_TEXT = '[data-automation-id="questionTitle"]';
-	const SELECTOR_CHOICE_INPUT =
+	const SELECTOR_RADIO_INPUT =
 		'[data-automation-id="choiceItem"] input[type="radio"]';
 	const SELECTOR_TEXT_INPUT = 'textarea[data-automation-id="textInput"]'; // dùng để phát hiện câu tự luận
+	const SELECTOR_CHECKBOX_INPUT =
+		'[data-automation-id="choiceItem"] input[type="checkbox"]';
 
 	const SETTINGS = {
 		caseInsensitive: true,
@@ -39,7 +41,9 @@
 	function matchQuestion(questionText, qItem, map) {
 		const qNorm = normalize(questionText);
 		const choices = Array.from(
-			qItem.querySelectorAll(SELECTOR_CHOICE_INPUT)
+			qItem.querySelectorAll(
+				`${SELECTOR_RADIO_INPUT}, ${SELECTOR_CHECKBOX_INPUT}`
+			)
 		).map((el) =>
 			normalize(
 				el.closest("label")?.innerText || el.getAttribute("value") || ""
@@ -52,13 +56,42 @@
 			candidates = map.filter((item) =>
 				qNorm.includes(normalize(item.question))
 			);
-			// Nếu có nhiều câu hỏi trùng nhau → chọn câu có đáp án khớp với 1 trong 4 lựa chọn
-			for (const c of candidates) {
-				const ansNorm = normalize(c.answer);
-				if (
-					choices.some((ch) => ch.includes(ansNorm) || ansNorm.includes(ch))
-				) {
-					return c;
+
+			if (!candidates.length) return null;
+
+			const isMulti =
+				qItem.querySelectorAll(SELECTOR_CHECKBOX_INPUT).length > 0;
+
+			if (isMulti) {
+				// checkbox → chọn nhiều đáp án
+				let matchedAnswers = [];
+				for (const c of candidates) {
+					const answers = Array.isArray(c.answer) ? c.answer : [c.answer];
+					for (const ans of answers) {
+						const ansNorm = normalize(ans);
+						if (
+							choices.some((ch) => ch.includes(ansNorm) || ansNorm.includes(ch))
+						) {
+							matchedAnswers.push(ans);
+						}
+					}
+					if (matchedAnswers.length)
+						return { question: questionText, answer: matchedAnswers };
+				}
+			} else {
+				// radio → chọn đúng 1 đáp án khớp
+				for (const c of candidates) {
+					const ansNorm = normalize(
+						Array.isArray(c.answer) ? c.answer[0] : c.answer
+					);
+					if (
+						choices.some((ch) => ch.includes(ansNorm) || ansNorm.includes(ch))
+					) {
+						return {
+							question: questionText,
+							answer: Array.isArray(c.answer) ? c.answer[0] : c.answer,
+						};
+					}
 				}
 			}
 		} else {
@@ -72,26 +105,58 @@
 
 	/** Tìm lựa chọn khớp và click **/
 	function selectAnswerInQuestion(questionEl, answerKeyword, index) {
-		const normalizedAnswer = normalize(answerKeyword);
-		const choices = questionEl.querySelectorAll(SELECTOR_CHOICE_INPUT);
+		const isMulti =
+			questionEl.querySelectorAll(SELECTOR_CHECKBOX_INPUT).length > 0;
 
-		for (const choice of choices) {
-			const labelText = normalize(
-				choice.closest("label")?.innerText || choice.getAttribute("value") || ""
-			);
-			if (
-				labelText.includes(normalizedAnswer) ||
-				normalizedAnswer.includes(labelText)
-			) {
-				choice.click();
-				console.log(`🎯 [Câu ${index + 1}] Đã chọn đáp án "${labelText}"`);
-				return true;
+		const answers = Array.isArray(answerKeyword)
+			? answerKeyword
+			: [answerKeyword];
+
+		const inputs = questionEl.querySelectorAll(
+			isMulti ? SELECTOR_CHECKBOX_INPUT : SELECTOR_RADIO_INPUT
+		);
+
+		let selectedLabels = [];
+
+		for (const ans of answers) {
+			const normalizedAnswer = normalize(ans);
+			for (const choice of inputs) {
+				const labelText = normalize(
+					choice.closest("label")?.innerText ||
+						choice.getAttribute("value") ||
+						""
+				);
+				if (
+					labelText.includes(normalizedAnswer) ||
+					normalizedAnswer.includes(labelText)
+				) {
+					if (!choice.checked) choice.click();
+					selectedLabels.push(labelText);
+					break;
+				}
 			}
 		}
-		console.log(
-			`⚠️ Không tìm thấy lựa chọn phù hợp với keyword "${answerKeyword}"`
-		);
-		return false;
+		if (selectedLabels.length > 0) {
+			if (isMulti) {
+				console.log(
+					`🎯 [Câu ${index + 1}] Đã chọn ${
+						selectedLabels.length
+					} đáp án: ${selectedLabels.map((l) => `"${l}"`).join(", ")}`
+				);
+			} else {
+				console.log(
+					`🎯 [Câu ${index + 1}] Đã chọn đáp án "${selectedLabels[0]}"`
+				);
+			}
+			return true;
+		} else {
+			console.log(
+				`⚠️ [Câu ${
+					index + 1
+				}] Không tìm thấy lựa chọn phù hợp cho: "${answers.join(", ")}"`
+			);
+			return false;
+		}
 	}
 
 	/** Hàm chính **/
@@ -114,6 +179,7 @@
 				qItem.querySelector(SELECTOR_QUESTION_TEXT)?.innerText.trim() || "";
 
 			if (!questionText) return;
+
 			// Nếu câu hỏi là dạng text (có textarea) thì skip
 			if (qItem.querySelector(SELECTOR_TEXT_INPUT)) {
 				qItem.style.border = "3px solid orange";
@@ -125,8 +191,10 @@
 				return;
 			}
 
-			const matched = matchQuestion(questionText, qItem, map);
+			// ✅ Nếu là câu hỏi nhiều đáp án (checkbox)
+			const checkboxInputs = qItem.querySelectorAll(SELECTOR_CHECKBOX_INPUT);
 
+			const matched = matchQuestion(questionText, qItem, map);
 			if (!matched) {
 				console.log(
 					`❌ [Câu ${
